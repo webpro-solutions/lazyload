@@ -1,0 +1,10 @@
+node_modules/
+dev/
+dist/index.html
+dist/report.html
+webpack.js
+babel.config.js
+.eslintrc
+.eslintrc.json
+.eslintcache
+.gitignore
