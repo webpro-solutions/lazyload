@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules/
+dist/*.html
+dist/*.txt
+
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# PHP Storm
+.idea
+.vscode
