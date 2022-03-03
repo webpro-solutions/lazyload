@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lazy Load Modules Sandbox</title>
+    <style>
+      body > div {
+        background-color: red;
+        height: 500px;
+        position: relative;
+      }
+      body > div[data-loaded="true"] {
+        background-color: green;
+      }
+      body > div:after {
+        content: attr(data-name);
+        position: absolute;
+        top: 200px;
+        text-align:center;
+        display:block;
+        width: 100%;
+        font-size: 4em;
+        font-weight: bold;
+      }
+      body > span {
+        display: block;
+        height: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myApplication1" data-module="testModule" data-test="option" data-name="Module 1">&nbsp;</div>
+    <span>&nbsp;</span>
+    <div id="myApplication2" data-module="testModule" data-something="option" data-name="Module 2">&nbsp;</div>
+    <span>&nbsp;</span>
+    <div id="myApplication3" data-module="testModule" data-something-else="option" data-name="Module 3">&nbsp;</div>
+    <script src="loader.js"></script>
+  </body>
+</html>
